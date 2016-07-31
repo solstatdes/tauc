@@ -1,44 +1,7 @@
-# python-getting-started
+# HiPy Web App Project
 
-A barebones Python app, which can easily be deployed to Heroku.
+HiPy needs a website to post all it's resources and to promote itself. This is a great opportunity to demonstrate to you the awesome power of Python when used in conjunction with the web framework Django.
 
-This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+The website has already been deployed but you can start contributing to its functionality and design today by forking this repository.
 
-## Running Locally
-
-Make sure you have Python [installed properly](http://install.python-guide.org).  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
-
-```sh
-$ git clone git@github.com:heroku/python-getting-started.git
-$ cd python-getting-started
-
-$ pip install -r requirements.txt
-
-$ createdb python_getting_started
-
-$ python manage.py migrate
-$ python manage.py collectstatic
-
-$ heroku local
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-
-$ heroku run python manage.py migrate
-$ heroku open
-```
-or
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Python on Heroku, see these Dev Center articles:
-
-- [Python on Heroku](https://devcenter.heroku.com/categories/python)
+Soon we'l set up a HiPy Website working group where we can discuss what we need for the site. In the meantime, if you're serious about learning becoming a contributor then checkout the resources that are currently posted on the site.
