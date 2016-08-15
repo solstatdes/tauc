@@ -23,9 +23,6 @@
 <div class = "container">
    <div class="row">
        <div class="col-md-10 col-md-offset-1">
-           <div>
-               {{ data }}
-           </div>
            </div>
                <form name="file-form" enctype="multipart/form-data" action = "{% url 'index' %}" method="POST">
                    {% csrf_token %}
@@ -43,6 +40,8 @@
        <p>Copyright Solid State Design 2016</p>
    <div>
 </div>
+{% endblock %}
 
-
+{% block script %}
+    data = {{ data }}
 {% endblock %}
