@@ -1,3 +1,20 @@
+var electron=1.602e-19; /* electronic charge */
+var planck = 6.63e-34;  /* Planck's constat */
+var sol = 3e8; /* speed of light */
+
+function tauc (data, target) {
+    console.log('?');
+    var newData = [];
+    for (i in data) {
+        wl = data[i][0];
+        T = data[i][1];
+        eV = (planck*sol)/(electron*1e-9*wl);
+        alpha = Math.pow((Math.log(-(T/100))*eV), 2);
+        newData.push([eV, alpha]);
+    };
+    plot(newData, target);
+};
+
 function plot (data, target) {
     console.log(data)
        

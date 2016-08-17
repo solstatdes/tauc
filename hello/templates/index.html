@@ -23,8 +23,11 @@
 <div class = "container">
    <div class="row">
        <div class="col-md-10 col-md-offset-1">
-           <div class="col-sm-8" id="out-chart"></div>
+           <div class="col-sm-8" id="out-chart">
+           </div>
            <div class="col-sm-3">
+               <a href="" onclick='plot({{ data }}, "out-chart"); return false;'>T/R</a>
+               <a href="" onclick='tauc({{ data }}, "out-chart"); return false;'>Tauc</a>
                <form name="file-form" enctype="multipart/form-data" action = "{% url 'index' %}" method="POST">
                    {% csrf_token %}
                    {{ form }}
